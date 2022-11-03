@@ -25,10 +25,9 @@
         <esi:attempt>
           <esi:include
             src="https://swawrzyn.github.io/esi-test-page/subpage.html"
-          >
-          </esi:include
-        ></esi:attempt>
-        <esi:except> $set_response_code(404) </esi:except>
+          />
+          </esi:attempt>
+        <esi:except> couldn't esi:include </esi:except>
       </esi:try>
       <esi:try>
         <esi:attempt>
@@ -37,7 +36,7 @@
           >
           </esi:eval
         ></esi:attempt>
-        <esi:except> $set_response_code(404) </esi:except>
+        <esi:except> couldn't esi:eval  </esi:except>
       </esi:try>
       <esi:vars>
         <h2>Subpage with ESI below:</h2>
