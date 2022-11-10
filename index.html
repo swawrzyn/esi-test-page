@@ -21,6 +21,9 @@
         </esi:when>
       </esi:choose>
     </esi:vars>
+    <esi:vars>
+      <div>ENV value: <bold>$(env)</bold></div>
+    </esi:vars>
     <esi:try>
       <esi:attempt>
         <esi:include
@@ -32,7 +35,8 @@
     <esi:try>
       <esi:attempt>
         <esi:eval
-          src="https://swawrzyn.github.io/esi-test-page/subpage-esi.html" />
+          src="https://swawrzyn.github.io/esi-test-page/subpage-esi.html"
+        />
       </esi:attempt>
       <esi:except> couldn't esi:eval </esi:except>
     </esi:try>
